@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "name": "enterprise-crm-integration-agent",
+  "source": {
+    "revision": "step-01"
+  },
+  "step": {
+    "no": 1,
+    "of": 6,
+    "title": "Mock CRM and order contracts",
+    "branch": "step-01",
+    "previous": null,
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.contacts",
+      "name": "contacts",
+      "type": "backend",
+      "source": {
+        "file": "app/features/feature_sync/doors/router.py",
+        "revision": "step-01"
+      },
+      "description": "HTTP boundary for scoped contact listing",
+      "step_change": "added"
+    },
+    {
+      "id": "be.handle_list_contacts",
+      "name": "handle_list_contacts",
+      "type": "backend",
+      "source": {
+        "file": "app/features/feature_sync/handlers/list_contacts.py"
+      },
+      "description": "Delegates reads to business service",
+      "step_change": "added"
+    },
+    {
+      "id": "be.list_contacts",
+      "name": "list_contacts",
+      "type": "backend",
+      "source": {
+        "file": "app/features/feature_sync/services/list_contacts.py"
+      },
+      "description": "Retrieves synthetic contacts by tenant",
+      "step_change": "added"
+    },
+    {
+      "id": "be.get_contacts",
+      "name": "get_contacts",
+      "type": "backend",
+      "source": {
+        "file": "app/features/feature_sync/providers/memory_crm.py"
+      },
+      "description": "In-memory mock CRM store",
+      "step_change": "added"
+    }
+  ],
+  "relations": [
+    {
+      "from": "be.contacts",
+      "to": "be.handle_list_contacts",
+      "type": "call"
+    },
+    {
+      "from": "be.handle_list_contacts",
+      "to": "be.list_contacts",
+      "type": "call"
+    },
+    {
+      "from": "be.list_contacts",
+      "to": "be.get_contacts",
+      "type": "call"
+    }
+  ]
+}
