@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "name": "enterprise-crm-integration-agent",
+  "step": {
+    "no": 5,
+    "of": 6,
+    "title": "Idempotent retry and recovery",
+    "branch": "step-05-idempotent-retry-and-recovery",
+    "previous": "STEP-4.crd"
+  },
+  "components": [
+    {
+      "id": "be.sync",
+      "name": "sync",
+      "source": {
+        "file": "app/features/feature_sync/services/idempotent_sync.py"
+      },
+      "description": "Enforces a local replay key and calls authorized_write",
+      "step_change": "added"
+    },
+    {
+      "id": "be.authorized_write",
+      "name": "authorized_write",
+      "source": {
+        "file": "app/features/feature_sync/services/authorized_write.py"
+      },
+      "step_change": "unchanged"
+    }
+  ]
+}
