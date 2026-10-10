@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "name": "enterprise-crm-integration-agent",
+  "source": {
+    "revision": "step-03"
+  },
+  "step": {
+    "no": 3,
+    "of": 6,
+    "title": "Normalize CRM field mappings",
+    "branch": "step-03",
+    "previous": "STEP-2.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.contacts",
+      "name": "contacts",
+      "source": {
+        "file": "app/features/feature_sync/doors/router.py"
+      },
+      "step_change": "unchanged"
+    },
+    {
+      "id": "be.list_contacts",
+      "name": "list_contacts",
+      "source": {
+        "file": "app/features/feature_sync/services/list_contacts.py"
+      },
+      "step_change": "unchanged"
+    },
+    {
+      "id": "be.step2",
+      "name": "paged_client.py",
+      "source": {
+        "file": "app/features/feature_sync/providers/paged_client.py"
+      },
+      "step_change": "unchanged"
+    },
+    {
+      "id": "be.step3",
+      "name": "normalize_contact.py",
+      "source": {
+        "file": "app/features/feature_sync/services/normalize_contact.py"
+      },
+      "step_change": "added"
+    }
+  ],
+  "relations": []
+}
