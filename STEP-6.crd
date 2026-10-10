@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "name": "enterprise-crm-integration-agent",
+  "step": {
+    "no": 6,
+    "of": 6,
+    "title": "Contract and integration CI",
+    "branch": "step-06-contract-and-integration-ci",
+    "previous": "STEP-5.crd"
+  },
+  "components": [
+    {
+      "id": "be.sync",
+      "name": "sync",
+      "source": {
+        "file": "app/features/feature_sync/services/idempotent_sync.py"
+      },
+      "step_change": "unchanged"
+    },
+    {
+      "id": "ci.pytest",
+      "name": "pytest",
+      "source": {
+        "file": ".github/workflows/ci.yml"
+      },
+      "step_change": "added"
+    }
+  ]
+}
