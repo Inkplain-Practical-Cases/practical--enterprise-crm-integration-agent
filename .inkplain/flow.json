@@ -4,7 +4,7 @@
     "slug": "enterprise-crm-integration-agent",
     "name": "Enterprise CRM Integration Agent"
   },
-  "current": "inkp",
+  "current": "content",
   "stages": {
     "intro": {
       "status": "done",
@@ -33,7 +33,21 @@
         "ci_jobs_success": 7,
         "ci_url": "https://github.com/Inkplain-Practical-Cases/practical--enterprise-crm-integration-agent/actions/runs/38050653247"
       }
+    },
+    "inkp": {
+      "status": "done",
+      "summary": "One six-tab .inkp is committed on main, with 20 linked Process Executor contracts, populated inputs/operations/outputs, and zero missing linked documents. Diagram links include only relationships supported by the educational sources.",
+      "outputs": {
+        "tabs": 6,
+        "linked_documents": 20,
+        "missing_links": 0,
+        "inkp_path": "enterprise-crm-integration-agent.inkp",
+        "inkp_url": "https://github.com/Inkplain-Practical-Cases/practical--enterprise-crm-integration-agent/blob/main/enterprise-crm-integration-agent.inkp"
+      },
+      "started_at": "2026-10-10T12:05:30.871Z",
+      "finished_at": "2026-10-10T12:05:30.871Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T12:05:26.001Z"
+  "updated_at": "2026-10-10T12:05:30.871Z"
 }
