@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "name": "enterprise-crm-integration-agent",
+  "step": {
+    "no": "final",
+    "of": 6,
+    "title": "Final CRM learning application",
+    "branch": "main"
+  },
+  "components": [
+    {
+      "id": "be.sync",
+      "name": "sync",
+      "source": {
+        "file": "app/features/feature_sync/services/idempotent_sync.py"
+      },
+      "step_change": "unchanged"
+    },
+    {
+      "id": "ci.pytest",
+      "name": "pytest",
+      "source": {
+        "file": ".github/workflows/ci.yml"
+      },
+      "step_change": "added"
+    }
+  ]
+}

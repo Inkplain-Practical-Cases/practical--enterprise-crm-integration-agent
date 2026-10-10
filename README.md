@@ -1,18 +1,3 @@
 # Enterprise CRM Integration Agent
 
-Synchronize authorized CRM/order records using typed APIs, idempotency and audit trails.
-
-An Inkplain practical case: a real project built step by step.
-
-## How this repository works
-
-Every step of the lesson has its own branch, and each one contains all steps up to it:
-
-```bash
-git clone https://github.com/Inkplain-Practical-Cases/practical--enterprise-crm-integration-agent.git
-cd practical--enterprise-crm-integration-agent
-git branch -r            # list the step branches
-git checkout step-01-…   # code after step 1
-```
-
-`main` holds the final, complete version.
+Six cumulative learning steps with synthetic CRM data and scoped authorization exercises. Final version uses an in-memory educational idempotency ledger, not production persistence. Install with `python -m pip install -r requirements.txt` and run `python -m pytest -q`. Follow each STEP branch and its CRD/MD documentation. Import the `.inkp` file in Inkplain Simulator to inspect the six diagrams.
