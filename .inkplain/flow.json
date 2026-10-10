@@ -1,0 +1,39 @@
+{
+  "practical_case": {
+    "id": "f5SHsfnV3Ba2zNreYCz7",
+    "slug": "enterprise-crm-integration-agent",
+    "name": "Enterprise CRM Integration Agent"
+  },
+  "current": "inkp",
+  "stages": {
+    "intro": {
+      "status": "done",
+      "summary": "Verified Junior FDE case, skill links, seven substantive introduction sections and HTML architecture diagram; cover reused from Media Library.",
+      "started_at": "2026-10-10T09:09:11.187Z",
+      "finished_at": "2026-10-10T09:11:26.245Z",
+      "updated_by": "api-key:for-chatgpt-test-2",
+      "outputs": {
+        "portal_url": "/practical-case/enterprise-crm-integration-agent",
+        "level": "junior",
+        "skills_linked": 5,
+        "intro_sections": 7,
+        "cover_reused": true
+      }
+    },
+    "repo": {
+      "status": "done",
+      "summary": "Six cumulative STEP branches and final main were committed. Seven-branch GitHub Actions matrix passed 7/7 for synthetic FastAPI tests; in-memory idempotency is educational and not production-durable.",
+      "started_at": "2026-10-10T11:43:11.839Z",
+      "finished_at": "2026-10-10T12:05:26.001Z",
+      "updated_by": "api-key:for-chatgpt-test-2",
+      "outputs": {
+        "repo_url": "https://github.com/Inkplain-Practical-Cases/practical--enterprise-crm-integration-agent",
+        "steps": 6,
+        "ci_jobs_total": 7,
+        "ci_jobs_success": 7,
+        "ci_url": "https://github.com/Inkplain-Practical-Cases/practical--enterprise-crm-integration-agent/actions/runs/38050653247"
+      }
+    }
+  },
+  "updated_at": "2026-10-10T12:05:26.001Z"
+}
