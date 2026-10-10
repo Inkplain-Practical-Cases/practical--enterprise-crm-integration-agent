@@ -1,10 +1,23 @@
-name: crm-tests
+name: crm-learning-ci
 on: [push, workflow_dispatch]
 jobs:
-  pytest:
+  branch-tests:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ref:
+          - main
+          - step-01-mock-crm-and-order-contracts
+          - step-02-authenticated-clients-and-pagination
+          - step-03-normalize-crm-field-mappings
+          - step-04-tenant-authorization-and-audit
+          - step-05-idempotent-retry-and-recovery
+          - step-06-contract-and-integration-ci
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
