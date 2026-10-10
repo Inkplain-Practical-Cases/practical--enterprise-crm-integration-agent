@@ -4,7 +4,7 @@
     "slug": "enterprise-crm-integration-agent",
     "name": "Enterprise CRM Integration Agent"
   },
-  "current": "content",
+  "current": "done",
   "stages": {
     "intro": {
       "status": "done",
@@ -47,7 +47,23 @@
       "started_at": "2026-10-10T12:05:30.871Z",
       "finished_at": "2026-10-10T12:05:30.871Z",
       "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "content": {
+      "status": "done",
+      "summary": "Eight active categories and 45 published educational lessons (18 Overview, 24 STEP, 3 Conclusion) created and section counts read back. Case examples are synthetic, and production CRM or durable reconciliation are not implemented.",
+      "outputs": {
+        "portal_url": "/practical-case/enterprise-crm-integration-agent",
+        "categories": 8,
+        "items": 45,
+        "overview": 18,
+        "step_items": 24,
+        "conclusion": 3,
+        "structural_qa": true
+      },
+      "started_at": "2026-10-10T12:05:35.399Z",
+      "finished_at": "2026-10-10T12:05:35.399Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T12:05:30.871Z"
+  "updated_at": "2026-10-10T12:05:35.399Z"
 }
