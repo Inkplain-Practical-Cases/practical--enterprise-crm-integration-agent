@@ -50,7 +50,7 @@
     },
     "content": {
       "status": "done",
-      "summary": "Source-backed persistence audit completed: CRM provider uses in-memory CONTACTS; idempotency LEDGER and AUDIT list are process memory only. Therefore no STEP-N.erd, ERD tabs or Database lesson is warranted.",
+      "summary": "Added actual SQLite CRM HTTP request/outcome schema at STEP-6, main FINAL.erd, Simulator ERD and second-position portal Database lesson.",
       "outputs": {
         "portal_url": "/practical-case/enterprise-crm-integration-agent",
         "categories": 8,
@@ -60,9 +60,11 @@
         "conclusion": 3,
         "structural_qa": true,
         "erd_audit_complete": true,
-        "erd_applicable_steps": [],
-        "erd_not_applicable": true,
-        "erd_lessons_created": 0,
+        "erd_applicable_steps": [
+          6
+        ],
+        "erd_not_applicable": false,
+        "erd_lessons_created": 1,
         "erd_item_title": "Database (Entity) Relations",
         "erd_audit_note": "CRM provider uses in-memory CONTACTS; idempotency LEDGER and AUDIT list are process memory only."
       },
@@ -71,5 +73,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-13T15:13:52.482Z"
+  "updated_at": "2026-10-13T16:04:46.223Z"
 }
